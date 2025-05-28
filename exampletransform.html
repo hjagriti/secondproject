@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{               
+            width: 400px;
+            height: 400px;
+            border: 2px solid red;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            border-radius: 50%;
+            /* animation-name: spin;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            background-color: blueviolet;
+             */
+        }
+        .child1{
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+             /* animation-name: spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;  */
+            border-radius: 50%;
+             position: relative;
+            top: -25px;
+            background-color: black;  
+        } 
+        .child2{
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+            /* animation-name: spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+             border-radius:60%; 
+            position: relative;
+            right: -370px;
+            background-color:red;  
+            
+        }
+        .child3{
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+            /* animation-name: spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            border-radius: 50%;
+             position: relative;
+            top: -15px;
+            background-color: blue;  
+        left: -150px; 
+        }
+        .child4{
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+            /* animation-name: spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            border-radius: 50%;
+            position: relative;
+            top: -70px;
+            background-color: black;
+            left: 150px;  
+        } 
+
+        @keyframes move {
+             0%{
+                transform: translate(0px,0px);
+             }
+             25%{
+                transform:translate(316px,0px) ;
+             }
+             50%{
+                transform: translate(316px,316px);
+             }
+             75%{
+                transform: translate(0px,316px);
+             }
+             100%{
+                transform: translate(0px,0px);
+             }
+            
+        }
+        @keyframes spin {
+             from{
+                transform: rotate(360deg);
+             }
+             to{
+                transform:rotate(-360deg) ;
+             }
+            
+        }
+    </style>
+</head>
+<body>
+    <span>web development</span>
+    <div class="con">
+        <div class="child1">
+            <div class="child2"><h1>css</h1></div>
+            <div class="child3">html</div>
+            <div class="child4">js</div>
+            <div class="child5">php</div>
+
+        </div>
+    </div>
+
+</body>
+</html>

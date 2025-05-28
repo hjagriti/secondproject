@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            animation-name: backgroundchanger;
+            animation-duration: 50s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+        }
+        .con{
+            width: 200px;
+            height: 80px;
+            border: 2px solid red;
+            margin-top: 50px;
+            transition: width 3s;
+            animation-name: conani;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction:  alternate-reverse;
+        }
+        .con:hover{
+            width: 500px;
+            background-color: darkseagreen;
+            
+
+        }
+        .con2{
+            width: 200px;
+            height: 80px;
+            border: 2px solid gray;
+            margin-top: 50px;
+            transition: width 3s;
+            animation-name: conani1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction:  alternate-reverse;
+            animation-delay: 4s;
+        }
+        .con2:hover{
+            width: 500px;
+            background-color: crimson;
+        }
+
+        .con3{
+            width: 200px;
+            height: 80px;
+            border: 2px solid green;
+            margin-top: 50px;
+            transition: width 3s;
+            animation-name: circleani;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            
+
+        }
+        .con3:hover{
+            width: 500px;
+            background-color: darkred;
+        }
+        @keyframes conani {
+            from{
+                background-color: darkmagenta;
+                width: 200px;
+            }
+            to{
+                background-color: hotpink;
+                width: 400px;
+            }
+            
+        }
+        @keyframes conani1 {
+            from{
+                background-color: darksalmon;
+                width: 200px;
+            }
+            to{
+                background-color: steelblue;
+                width: 400px;
+            }
+            
+        }
+        
+            
+        
+        @keyframes backgroundchanger {
+            0%{
+                background-color: lightgreen;
+            }
+            25%{
+background-color: brown;
+            }
+            50%{
+                background-color: aquamarine;
+            }
+            75%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: blanchedalmond;
+            }
+        }
+        @keyframes circleani {
+           0%{
+            width: 250px;
+            height: 80px;
+            background-color:goldenrod ;
+           }
+           33%{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border:2px inset red ;
+           }
+           70%{
+            width: 250px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px outset black;
+            background-color:red ;
+           }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+
+    </div>
+    <div class="con2">
+
+    </div>
+    <div class="con3">
+
+    </div>
+</body>
+</html>
